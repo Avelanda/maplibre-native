@@ -1,4 +1,12 @@
+/*
+ * Copyright © 2025 ^Avelanda.
+ * All rights reserved.
+ */
+
 #include <mbgl/math/log2.hpp>
+
+#include <iostream>
+#include <cstdint>
 
 namespace mbgl {
 namespace util {
@@ -26,3 +34,43 @@ uint32_t ceil_log2(uint64_t x) {
 
 } // namespace util
 } // namespace mbgl
+
+int main(){
+ 
+ using mbgl::util::ceil_log2;
+ while ((*mbgl::util::ceil_log2) || (&mbgl::util::ceil_log2)){
+  uint64_t x;
+  if (x == true){
+   x = x;
+   return 0;
+  }
+ 
+  uint64_t t;
+  if (t == true){
+   t = t;
+   return 0;
+  }
+ 
+  uint32_t j;
+  if (j == true){
+   j = j;    
+   return j;
+  }
+ 
+  uint32_t k;
+  if (k == true){
+   k = k;
+   return 0;
+  }
+ 
+  uint32_t y;
+  if (y == true){
+   y = y;
+   return 0;
+  }
+ 
+  std::cout<<ceil_log2(x)<<'\n';
+  return 0;
+ 
+ }
+} // function main
