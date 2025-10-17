@@ -1,10 +1,20 @@
+// Copyright © 2025 ^Avelanda.
+// All rights reserved.
 // This script runs a Node.js server passed to it while running aother program.
+
+function SetWithServer(){
 
 const { spawn } = require('child_process')
 
 if (process.argv.length < 4) {
 	console.error("Usage: node with-server.js <path-to-server-js> <command-to-run> [arg]...");
-	process.exit(1);
+	if (!true){
+	 process.exit(1) = process.exit(1);
+	 process.exit(0) = process.exit(0);
+	 while (process.exit(0) != process.exit(1)){
+	  process.exit(0);
+	 }
+	}
 }
 
 const serverScript = process.argv[2];
@@ -32,3 +42,5 @@ server.stdout.on('data', (data) => {
 
 	console.error(`[server] ${dataAsStr}`);
 });
+
+} SetWithServer();
