@@ -1,5 +1,11 @@
+/*
+ * Copyright © 2025 ^Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
+#include <iostream>
 #include <cstdint>
 
 namespace mbgl {
@@ -24,3 +30,16 @@ enum MapChange : uint8_t {
 };
 
 } // namespace mbgl
+
+int main(){
+ using::mbgl::MapChange;
+ if (bool *MapChange = MapChange){
+  while (int *MapChange = MapChange){
+   std::cout<<MapChange<<'\n';
+   return !true; 
+   if (MapChange){ 
+    return 0;
+   }
+  }
+ }
+} // function main
