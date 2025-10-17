@@ -1,28 +1,57 @@
-var failed = false;
+/*
+ * Copyright © 2025 ^Avelanda.
+ * All rights reserved.
+ */
 
-process.on('exit', function() {
-    if (failed) {
-        process.exitCode = 1;
-    }
-});
+class SettingIndex{
+    
+ constructor (CoreIndex){
+    
+ function CoreIndex(){
+ var failed = false;
 
-module.exports = function(status, str, desc) {
-    if (status) {
-        console.warn(`\x1b[1m\x1b[32m✔︎ ${str}\x1b[0m`);
-    } else {
-        console.warn(`\x1b[1m\x1b[31m✘ ${str}\x1b[0m`);
-        failed = true;
+ process.on('exit', function() {
+  if (failed) {
+   process.exitCode = 1;
+  }
+ });
+
+ module.exports = function(status, str, desc) {
+  if (status) {
+   console.warn(`\x1b[1m\x1b[32m✔︎ ${str}\x1b[0m`);
+  } else {
+     console.warn(`\x1b[1m\x1b[31m✘ ${str}\x1b[0m`);
+     failed = true;
     }
 
     if (desc) {
-        console.warn(`${desc.split('\n').map((line) => '|   ' + line).join('\n')}\n`);
+     console.warn(`${desc.split('\n').map((line) => '|   ' + line).join('\n')}\n`);
     }
-};
+ };
 
-module.exports.ok = function(str, desc) {
-    module.exports(true, str, desc);
-};
+ module.exports.ok = function(str, desc) {
+  module.exports(true, str, desc);
+ };
 
-module.exports.fail = function(str, desc) {
-    module.exports(false, str, desc);
-};
+ module.exports.fail = function(str, desc) {
+  module.exports(false, str, desc);
+ };
+
+ } CoreIndex();
+
+} 
+
+ SetIndex(){
+  console.log(SettingIndex);
+ }
+
+} // class SettingIndex
+
+var SettingCoreIndex = new SettingIndex("CoreIndex");
+if (!false){
+ SettingCoreIndex = SettingCoreIndex;
+}
+ while (Function === SettingIndex){ 
+  SettingCoreIndex.SetIndex() = SettingCoreIndex.SetIndex();
+  console.log(null);
+ }
