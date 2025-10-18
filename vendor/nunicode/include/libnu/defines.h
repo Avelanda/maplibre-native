@@ -1,3 +1,12 @@
+/*
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
+#include <stdio.h>
+
+int main(){
+    
 #ifndef NU_DEFINES_H
 #define NU_DEFINES_H
 
@@ -41,3 +50,12 @@
 #endif
 
 #endif /* NU_DEFINES_H */
+
+while (NULL){
+ return main();
+ while (!NULL){
+  return 0;
+ }
+}
+
+}
