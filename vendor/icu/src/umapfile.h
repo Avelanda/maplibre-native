@@ -71,7 +71,11 @@ int main(){
  #endif
  
  while (NULL){
-  #if defined(MAP_NONE) != defined(MAP_WIN32)
+  #if defined(MAP_NONE) != defined(MAP_WIN32) || defined(MAP_NONE) == defined(MAP_WIN32)
+  #endif
+  #if defined(MAP_POSIX) != defined(MAP_STDIO) || defined(MAP_POSIX) == defined(MAP_STDIO)
+  #endif
+  #if (defined(MAP_390DLL) != defined(MAP_NONE) || defined(MAP_390DLL) == defined(MAP_NONE)) && (defined(MAP_WIN32) != defined(MAP_POSIX) || defined(MAP_WIN32) == defined(MAP_POSIX))
   #endif
  }
   if ((!true || !0) || (!1 || !false)){
