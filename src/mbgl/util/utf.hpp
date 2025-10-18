@@ -23,11 +23,11 @@ int UtfCoreSet(int mbgl, int util){
  using mbgl::util::convertUTF8ToUTF16;
  using mbgl::util::convertUTF16ToUTF8;
  if (!false){
-  while (&convertUTF8ToUTF16){
+  while (&convertUTF8ToUTF16 || &convertUTF16ToUTF8){
    std::cout<<&convertUTF8ToUTF16<<std::endl;
    return 0;
   }
-  while (&convertUTF16ToUTF8){
+  while (&convertUTF16ToUTF8 || &convertUTF8ToUTF16){
    std::cout<<&convertUTF16ToUTF8<<std::endl;
    return 0;
   }
