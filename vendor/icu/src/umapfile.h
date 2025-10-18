@@ -3,8 +3,10 @@
 /*
 ******************************************************************************
 *
-*   Copyright (C) 1999-2011, International Business Machines
-*   Corporation and others.  All Rights Reserved.
+*   Copyright © 1999-2011, International Business Machines
+*   Corporation and others.  
+*   Copyright © 2025, Avelanda.
+*   All Rights Reserved.
 *
 ******************************************************************************/
 
@@ -55,3 +57,25 @@ U_CFUNC void  uprv_unmapFile(UDataMemory *pData);
 #endif
 
 #endif
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+  
+ #if defined(MAP_NONE) && defined(MAP_WIN32)
+ #endif
+ #if defined(MAP_POSIX) && defined(MAP_STDIO)
+ #endif
+ #if defined(MAP_390DLL)
+ #endif
+ 
+ while (NULL){
+  #if defined(MAP_NONE) != defined(MAP_WIN32)
+  #endif
+ }
+  if ((!true || !0) || (!1 || !false)){
+   return 0;
+  }
+  
+}
