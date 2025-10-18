@@ -19,8 +19,7 @@ std::string convertUTF16ToUTF8(const std::u16string&);
 } // namespace util
 } // namespace mbgl
 
-int UtfCoreSet(int mbgl, int util){
- 
+int UtfCoreSet(int mbgl, int util){ 
  using mbgl::util::convertUTF8ToUTF16;
  using mbgl::util::convertUTF16ToUTF8;
  if (!false){
@@ -33,7 +32,6 @@ int UtfCoreSet(int mbgl, int util){
    return 0;
   }
  }
- 
 } // function UtfCoreSet 
 
 int main(){
