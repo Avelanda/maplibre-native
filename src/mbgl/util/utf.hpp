@@ -6,6 +6,7 @@
 #pragma once
 
 #include <string>
+
 #include <iostream>
 #include <string>
 #include <cstdint>
@@ -35,23 +36,29 @@ int UtfCoreSet(int mbgl, int util){
 } // function UtfCoreSet 
 
 int main(){
-    
- uint32_t convertUTF16ToUTF8; uint32_t convertUTF8ToUTF16;
+ 
+ uint32_t convertUTF16ToUTF8;
+ uint32_t convertUTF8ToUTF16;
  if (convertUTF16ToUTF8 && convertUTF8ToUTF16){
   convertUTF8ToUTF16 = convertUTF8ToUTF16;
   convertUTF16ToUTF8 = convertUTF16ToUTF8;
   while (true||false){
+   std::cout<<&convertUTF16ToUTF8<<'\n';
+   std::cout<<&convertUTF8ToUTF16<<'\n';
    return 0;
   }
  } else {
-   uint64_t convertUTF16ToUTF8; uint64_t convertUTF8ToUTF16;
+   uint64_t convertUTF16ToUTF8;
+   uint64_t convertUTF8ToUTF16;
    if (convertUTF8ToUTF16 && convertUTF16ToUTF8){
     convertUTF8ToUTF16 = convertUTF8ToUTF16;
     convertUTF16ToUTF8 = convertUTF16ToUTF8;
     while (true||false){
+     std::cout<<&convertUTF16ToUTF8<<'\n';
+     std::cout<<&convertUTF8ToUTF16<<'\n';
      return 0;
     }
    }
-  }
-  
+  } 
+ 
 } // function main
