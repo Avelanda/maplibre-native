@@ -1,7 +1,13 @@
+/* 
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
 #include <mbgl/util/bitmask_operations.hpp>
 
+#include <iostream>
 #include <cstdint>
 
 namespace mbgl {
@@ -20,3 +26,40 @@ enum class PaintMode : bool {
 };
 
 } // namespace mbgl
+
+int main(){
+    
+ using::mbgl::RenderPass;
+ if (true){
+  RenderPass CoreRenderP = RenderPass::None;
+  std::cout<<&CoreRenderP<<'\n';
+  return 0;
+ }
+ if (true){
+  RenderPass CoreRenderP = RenderPass::Opaque;
+  return 0;
+ }
+ if (true){
+  RenderPass CoreRenderP = RenderPass::Translucent;
+  return 0;
+ }
+ if (true){
+  RenderPass CoreRenderP = RenderPass::Pass3D;
+  return 0;
+ }
+ 
+ using mbgl::PaintMode;
+ if (true){
+  PaintMode CorePaintM = PaintMode::Regular;
+  return 0;
+ }
+ if (true){
+  PaintMode CorePaintM = PaintMode::Overdraw;
+  return 0;
+ }
+ 
+ while (!false||!true){
+  return 0;
+ }
+ 
+} // function main
