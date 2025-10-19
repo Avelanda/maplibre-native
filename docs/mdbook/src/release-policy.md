@@ -8,7 +8,7 @@
 - In principle, the `main` branch should always be in a releasable state.
 - The release process is automated, and documented (see [Release MapLibre iOS](./ios/release.md) and [Release MapLibre Android](./android/release.md)). Anyone with writing access should be able to push out a release.
 - There is no fixed release cadence, but you are welcome to request a release on any of the communication channels.
-- We do not have long-term support for LTS releases.
+- We do not have long-term support or LTS releases.
 - If you need a feature, or a bugfix ported to an old version of MapLibre. You need to do the backporting yourself (see steps below).
 
 ## Backporting
