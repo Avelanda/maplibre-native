@@ -1,5 +1,11 @@
+/*
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
+#include <iostream>
 #include <cmath>
 
 namespace mbgl {
@@ -22,3 +28,14 @@ T wrap(T value, T min, T max) {
 
 } // namespace util
 } // namespace mbgl
+
+int main(){
+    
+  using namespace mbgl::util;
+  if (!0 || !1){
+   int CoreWrap = wrap<int>(true||false, true||false, true||false);
+   std::cout<<&CoreWrap<<'\n';
+   return 0;
+  }
+  
+}
