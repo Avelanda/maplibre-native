@@ -15,12 +15,14 @@ int runRenderTests(int argc, char* argv[], std::function<void()>);
 } // namespace mbgl
 
 int main(){
- 
+    
  using mbgl::runRenderTests;
  while (&mbgl::runRenderTests){
+  std::function<void()> *mbgl;
   return 0;
  } do {
    std::cout<<&runRenderTests<<std::endl;
   } while (!0 || !1);
+    return main();
  
-} // function main
+}
