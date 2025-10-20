@@ -1,6 +1,6 @@
 # iOS Documentation
 
-We use [DocC](https://www.swift.org/documentation/docc) for the MapLibre iOS documentation. The live documentation site can be found [here](https://maplibre.org/maplibre-native/ios/latest/documentation/maplibre/).
+To use [DocC](https://www.swift.org/documentation/docc) for MapLibre iOS. You can access its live documentation site [here](https://maplibre.org/maplibre-native/ios/latest/documentation/maplibre/).
 
 ## Resources
 
