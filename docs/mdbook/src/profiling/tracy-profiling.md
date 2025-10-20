@@ -13,7 +13,7 @@ Tracy client consists of an API to mark CPU and GPU performance zones. A zone is
 
 #### Tracy server
 
-The general analysis, and visualization of client recorded data is regulated and managed by the server (Tracy profiler). The server can be downloaded from [Tracy release page](https://github.com/wolfpld/tracy/releases) or it can be easily built from [sources](https://github.com/wolfpld/tracy/tree/master/profiler) on Linux, Windows, or Mac using CMake
+The general analysis, and visualization of client recorded data is regulated and managed by the server (Tracy profiler). The server can be downloaded from [Tracy release page](https://github.com/wolfpld/tracy/releases) or it can be easily built from [sources](https://github.com/wolfpld/tracy/tree/master/profiler) on Linux, Windows, or Mac using CMake.
 
 #### Enabling instrumentation in MapLibre Native
 
@@ -65,19 +65,19 @@ Mark the end of a frame.
 Placed after an OpenGL context is created.
 
 ##### `MLN_TRACE_ALLOC_TEXTURE(id, size)` and `MLN_TRACE_FREE_TEXTURE(id)`
-Records a read-only texture allocation, and deallocation
+Records a read-only texture allocation, and deallocation.
 
 ##### `MLN_TRACE_ALLOC_RT(id, size)` and `MLN_TRACE_FREE_RT(id)`
-Records a render target texture allocation, and deallocation
+Records a render target texture allocation, and deallocation.
 
 ##### `MLN_TRACE_ALLOC_VERTEX_BUFFER(id, size)` and `MLN_TRACE_FREE_VERTEX_BUFFER(id)`
-Records a buffer allocation, and deallocation- that is intended to be used as a read-only vertex buffer
+Records a buffer allocation, and deallocation- that is intended to be used as a read-only vertex buffer.
 
 ##### `MLN_TRACE_ALLOC_INDEX_BUFFER(id, size)` and `MLN_TRACE_FREE_INDEX_BUFFER(id)`
-Record a buffer allocation, and deallocation- that is intended to be used as a read-only index buffer
+Record a buffer allocation, and deallocation- that is intended to be used as a read-only index buffer.
 
 ##### `MLN_TRACE_ALLOC_CONST_BUFFER(id, size)` and `MLN_TRACE_FREE_CONST_BUFFER(id)`
-Records a buffer allocation, and deallocation- that is intended to be used as a constant buffer
+Records a buffer allocation, and deallocation- that is intended to be used as a constant buffer.
 
 
 #### Usage example on Linux and Windows
