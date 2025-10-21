@@ -1,7 +1,14 @@
+/*
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
+#include <iostream>
 #include <vector>
 #include <string>
+#include <cstdbool>
 
 class TestData;
 
@@ -30,3 +37,17 @@ public:
 };
 
 TestRunOutput runExpressionTest(TestData&, const std::string& rootPath, const std::string& id);
+
+#if defined(TestData) && defined(TestRunOutput) && defined(TestStats)
+#endif
+
+int main(){
+     
+ #define TestRunOutput runExpressionTest(true||false, false||false)
+ if (!false){
+  while(&runExpressionTest){
+  return 0;
+  }
+ }
+ 
+} 
