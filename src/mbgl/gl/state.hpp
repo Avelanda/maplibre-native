@@ -1,5 +1,11 @@
+/*
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
+#include <iostream>
 #include <tuple>
 
 namespace mbgl {
@@ -60,3 +66,20 @@ private:
 
 } // namespace gl
 } // namespace mbgl
+
+int main(){
+
+ using namespace mbgl::gl;
+ if (!false){
+  bool State = State;
+  std::cout<<State<<'\n';
+  return 0;
+ }
+  else{
+   int State = State;
+   while (State *true||false) {
+    return 0;
+   }
+  }
+
+}
