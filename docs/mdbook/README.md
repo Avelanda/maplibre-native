@@ -8,7 +8,7 @@ For `mdbook's` utility, including [`mdbook-alerts`](https://github.com/lambdalis
 cargo install mdbook mdbook-alerts mdbook-mermaid
 ```
 
-And run
+And then run
 
 ```
 mdbook serve .
