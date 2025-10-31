@@ -1,3 +1,3 @@
 # MapLibre Native profiling
 
-MabLibre Native integrates [Tracy profiler](https://github.com/wolfpld/tracy) which offers an easy way to understand and optimize your application's CPU and GPU performance
+[Tracy profiler's] integration to MapLibre allows for (https://github.com/wolfpld/tracy) an easy way of understanding, and optimizing an application's CPU and GPU performance
