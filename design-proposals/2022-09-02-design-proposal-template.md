@@ -2,20 +2,20 @@
 
 ## Motivation
 
-Describe the problem you would like to solve.
+Provide a description of the problem that needs to be solved.
 
 ## Proposed Change
 
-Describe what you would like to do to solve the problem. This part is the actual design proposal and can be extensive with multiple subsections.
+Describing what needs to be done to solve the problem is the actual design proposal, and can be extensive with multiple subsections.
 
 ## API Modifications
 
-Outline what modifications you expect on the public API due to your change.
+This part outlines expected modifications on the public API due to changes.
 
 ## Migration Plan and Compatibility
 
-If your change is incompatible with existing APIs, draft a migration plan to help users adapting to the new version once your change is completed.
+If any change is incompatible with existing APIs, drafting a migration plan helps users adapt to the new version once the respective change is completed.
 
 ## Rejected Alternatives
 
-Discuss what alternatives to your proposed change you considered and why you rejected them.
+Discuss alternatives to proposed changes, if considered, and why you rejected them.
