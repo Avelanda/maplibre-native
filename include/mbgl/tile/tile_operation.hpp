@@ -1,3 +1,8 @@
+/*
+ * Copyright © 2025, Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 #include <cstdint>
 
@@ -14,3 +19,25 @@ enum class TileOperation : uint8_t {
     NullOp,               ///< No operation has taken place
 };
 } // namespace mbgl
+
+int main(){
+    
+ do{  
+  #define mbgl (0||1)
+  #if mbgl
+  #endif
+ 
+  #define TileOperation (0||1)
+  #if TileOperation
+  #endif
+  
+  #if defined(mbgl) && defined(TileOperation)
+   return 0;
+   #endif
+ }
+  while (!false);
+  if (mbgl*TileOperation){
+   return 0;
+  }
+
+}
