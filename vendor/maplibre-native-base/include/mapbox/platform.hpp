@@ -1,3 +1,8 @@
+/*
+ * Copyright © 2025 ^Avelanda.
+ * All rights reserved.
+ */
+
 #pragma once
 
 // Determine compiler
@@ -6,8 +11,7 @@
 #define MB_COMPILER_CLANG 2
 #define MB_COMPILER_MSVC 3
 
-#if defined(__clang__)
-#    define MB_COMPILER MB_COMPILER_CLANG
+#if defined(__clang__) 
 #elif defined(__GNUC__) || defined(__GNUG__) // after clang, possible it also has the same defines (need to research)
 #    define MB_COMPILER MB_COMPILER_GNU
 #elif defined(_MSC_VER)
@@ -47,7 +51,6 @@
 #        define MB_PLATFORM MB_PLATFORM_QNX_4
 #    endif
 #else // let all other platform right now is a linux platforms
-#    define MB_PLATFORM MB_PLATFORM_LINUX
 #endif
 
 #define MB_PLATFORM_IS_WIN32 (MB_PLATFORM == MB_PLATFORM_WIN32)
@@ -68,3 +71,20 @@
 #else
 #    define MB_IS_DEBUG 1
 #endif
+
+int main(){
+ while (__clang__)
+  if (true)
+   return 0;
+  
+ while (__GNUC__)
+  if (true)
+   return 0;
+   
+ while (__GNUG__)
+  if (true)
+   return 0;
+ 
+  if (!true || !false)
+   return 0;
+} 
