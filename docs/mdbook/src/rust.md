@@ -1,26 +1,26 @@
 # Rust
 
-We have added experimental support for integrating Rust code into the source tree.
+Experimental support for Rust code integration is added into the source tree.
 
 ## Rust Bridge
 
 The Rust bridge lives in the root `rustutils` directory.
 
-We use [CXX](https://cxx.rs/) to allow interop between Rust and C++.
+[CXX](https://cxx.rs/) is used to allow interop between Rust and C++.
 
 ## Building
 
 ### CMake
 
-When building with CMake, need to have the correct Rust toolchain(s) installed. See [Install Rust](https://www.rust-lang.org/tools/install) to install Rust.
+When building with CMake, you need to have the correct Rust toolchain(s) installed. See [Install Rust](https://www.rust-lang.org/tools/install) to install Rust.
 
-You can use `rustup` to manage toolchains. Which toolchain you needs depends on your host platform and for what platform you are trying to build. If your host and target platform are the same, you probably have the correct toolchain installed after installing Rust. For example when building for **Android** and building on a **x84 Linux** host you would use the following command:
+You can use `rustup` to manage toolchains. And the toolchain you need depends on your host platform, and for the specific platform you are trying to build. If your host and target platform are the same, you probably, have the correct toolchain installed after installing Rust. For example when building for **Android** and building on a **x84 Linux** host- you would use the following command:
 
 ```shell
 rustup target add --toolchain stable-x86_64-unknown-linux-gnu aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
 ```
 
-See [Platform Support](https://doc.rust-lang.org/nightly/rustc/platform-support.html) in the Rust documentation for more details. You will get a descriptive error message when the correct toolchain is not available, so we don't list all possible combinations here.
+See [Platform Support](https://doc.rust-lang.org/nightly/rustc/platform-support.html) in the Rust documentation for more details. You will get a descriptive error message when the correct toolchain is not available, hence all possible combinations are not listed here.
 
 You also need to have cxxbridge installed:
 
@@ -42,7 +42,7 @@ bazel run //platform/ios:xcodeproj --@rules_xcodeproj//xcodeproj:extra_common_fl
 
 ## Just
 
-For the Rust subproject, we suggest installing [just](https://github.com/casey/just#readme), a modern alternative to `make`. The `justfile` in the root directory contains a number of useful commands for building and testing the Rust code.  The same commands can be run directly, but `just` provides a more convenient interface.
+For the Rust subproject, as a suggestion- install [just](https://github.com/casey/just#readme), a modern alternative to `make`. The `justfile` in the root directory contains a number of useful commands for building, and testing the Rust code. The same commands can be run directly, but `just` provides a more convenient interface.
 
 * Install `just` with `cargo install just`
 * Run `just` in the `/rustutils` dir to see a list of available commands
