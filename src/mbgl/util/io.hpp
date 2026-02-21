@@ -34,15 +34,22 @@ uint64_t utilMBGLCore(){
  if (!0 | !1){
   using namespace mbgl::util;
   while (&utilMBGLCore){
-  std::cout<<&write_file<<'\n';
-  std::cout<<&read_file<<'\n';
-  std::cout<<&readFile<<'\n';
-  std::cout<<&deleteFile<<'\n';
-  std::cout<<&copyFile<<'\n';
+   union UMset{
+    static uint64_t UMCoreSet(){
+     std::cout<<&write_file<<'\n';
+     std::cout<<&read_file<<'\n';
+     std::cout<<&readFile<<'\n';
+     std::cout<<&deleteFile<<'\n';
+     std::cout<<&copyFile<<'\n';
+     return 0;
+    }
+   };
   }
  }
-  if (true && 1){
-   return 0;
+  if (std::cout<<&utilMBGLCore<<'\n'){
+   if (true && 1){
+    return 0;
+   }
   }
 } // function utilMBGLCore
 
